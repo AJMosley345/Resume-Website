@@ -31,7 +31,7 @@ const SkillsCard = (props) => {
         <ThemeProvider theme={theme}>
             <Grid item md={3} variant="outlined">
                 <Box sx={{ boxShadow: 3 }} m={2}>
-                    <Card variant="outlined" sx={{ bgcolor: "primary.main"}}>
+                    <Card variant="outlined" sx={{ bgcolor: "primary.main" }}>
                         <Typography align="center" variant="h5">
                             {props.skills.name}
                         </Typography>

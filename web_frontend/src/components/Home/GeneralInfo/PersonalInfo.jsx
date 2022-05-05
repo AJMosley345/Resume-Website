@@ -1,13 +1,13 @@
 import React from "react";
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 function PersonalInfo() {
     return (
-        <>
-            <Typography variant="h3">
+        <Box my={2}>
+            <Typography variant="h4">
                 Personal Information
             </Typography>
-            <Typography variant="h4" >
+            <Typography variant="h5" >
                 Anthony Mosley Jr.
             </Typography>
             <Typography variant="subtitle1" >
@@ -19,7 +19,7 @@ function PersonalInfo() {
             <Typography variant="subtitle1" >
                 Student at West Chester University of PA
             </Typography>
-        </>
+        </Box>
 
     );
 }
