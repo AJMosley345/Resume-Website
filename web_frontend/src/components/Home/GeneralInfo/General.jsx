@@ -1,10 +1,9 @@
 import React from "react";
-import { Container, createTheme, ThemeProvider, CssBaseline } from '@mui/material';
+import { Container, createTheme, ThemeProvider, CssBaseline, Divider } from '@mui/material';
 import './GeneralInfo.css';
 import PersonalInfo from "./PersonalInfo";
 import Education from "./Education";
 import Experience from "./Experience";
-import Courses from "./Courses";
 
 const theme = createTheme({
     typography: {
@@ -22,9 +21,11 @@ function General() {
             <CssBaseline />
             <Container maxWidth='lg'>
                 <PersonalInfo />
+                <Divider />
                 <Education />
+                <Divider />
                 <Experience />
-                <Courses />
+                <Divider />
             </Container>
         </ThemeProvider>
     );

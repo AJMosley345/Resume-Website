@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, List, ListItem } from '@mui/material';
+import { Box, Typography, Card } from '@mui/material';
 
 const wcuexp = [
     {item: "Setup and maintained a server with multiple VM's."},
@@ -8,24 +8,28 @@ const wcuexp = [
 
 function Experience() {
     return (
-        <Box my={2}>
-            <Typography variant="h4">
+        <>
+            <Typography variant="h4" mt={1}>
                 Experience
             </Typography>
-            <Typography variant="h5">
-                Computer Operations (Work Study) - West Chester University
-            </Typography>
-            <Typography sx={{ fontWeight: 'bold' }}> 
-            January 2022 - May 2022 
-            </Typography>
-            <Box mx={3}>
-                <Typography variant='subtitle1'>
-                    {wcuexp.map(items => (
-                        <li>{items.item}</li>
-                    ))}
-                </Typography>
+            <Box my={2} display='inline-flex'>
+                <Card variant="outlined" sx={{ bgcolor: "rgba(236, 240, 241, 1)", maxWidth: '70%', padding: 2 }}>
+                    <Typography variant="h5">
+                        Computer Operations (Work Study) - West Chester University
+                    </Typography>
+                    <Typography sx={{ fontWeight: 'bold' }}> 
+                    January 2022 - May 2022 
+                    </Typography>
+                    <Box mx={3}>
+                        <Typography variant='subtitle1'>
+                            {wcuexp.map(items => (
+                                <li>{items.item}</li>
+                            ))}
+                        </Typography>
+                    </Box>
+                </Card>
             </Box>
-        </Box>
+        </>
     );
 }
 
