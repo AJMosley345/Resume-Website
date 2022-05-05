@@ -2,7 +2,6 @@ import React, { Suspense } from 'react';
 import General from './GeneralInfo/General';
 import Skills from './Skills/Skills';
 import Header from './Base/Header';
-import './Home.css';
 import { Divider } from '@mui/material';
 
 function Home () {

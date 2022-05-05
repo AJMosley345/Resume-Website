@@ -15,13 +15,9 @@ function Courses() {
                 Relevant Courses
             </Typography>
             <Box mx={3}>
-                <Typography variant='subtitle2'>
+                <Typography variant='subtitle1'>
                     {courses.map(items => (
-                        <List disablePadding>
-                            <ListItem sx={{ display: 'list-item' }} disablePadding>
-                                {items.item}
-                            </ListItem>
-                        </List>                
+                        <li>{items.item}</li>
                     ))}
                 </Typography>
             </Box>

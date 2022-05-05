@@ -15,17 +15,13 @@ function Experience() {
             <Typography variant="h5">
                 Computer Operations (Work Study) - West Chester University
             </Typography>
-            <Typography variant='subtitle1'> 
+            <Typography sx={{ fontWeight: 'bold' }}> 
             January 2022 - May 2022 
             </Typography>
             <Box mx={3}>
-                <Typography variant='subtitle2'>
+                <Typography variant='subtitle1'>
                     {wcuexp.map(items => (
-                        <List disablePadding>
-                            <ListItem sx={{ display: 'list-item' }} disablePadding>
-                                {items.item}
-                            </ListItem>
-                        </List>
+                        <li>{items.item}</li>
                     ))}
                 </Typography>
             </Box>

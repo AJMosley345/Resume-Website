@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, List, ListItem } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const edu = [
     {item: 'GPA: 3.67'},
@@ -16,14 +16,13 @@ function Education() {
             <Typography variant="h5">
                 West Chester University of PA
             </Typography>
+            <Typography sx={{ fontWeight: 'bold' }}>
+                August 2020 - May 2024
+            </Typography>
             <Box mx={3}>
                 <Typography variant="subtitle1">
                     {edu.map(items =>(
-                        <List disablePadding>
-                            <ListItem sx={{ display: 'list-item' }} disablePadding>
-                                {items.item}
-                            </ListItem>
-                        </List>                
+                        <li>{items.item}</li>
                     ))}
                 </Typography>
             </Box>

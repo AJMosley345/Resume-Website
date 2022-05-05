@@ -1,6 +1,5 @@
 import React from "react";
 import SkillsCard from "./SkillsCard";
-import '../Home.css'
 import { Grid, Typography, Container, ThemeProvider, createTheme, Box } from "@mui/material";
 
 
@@ -22,13 +21,12 @@ const backend = {
     name: "Backend",
     skills: ['Java', 'Python', 'Django']
 }
-const gameDev = {
-    name:"Game Development",
-    skills:['Unity', 'PyGame']
+const SysAdmin = {
+    name:"Systems Administration",
+    skills:['ESXi', 'Proxmox', 'Networking']
 }
 
 const Skills = () => {
-
     return (
         <ThemeProvider theme={theme}>
             <Container maxWidth='lg'>
@@ -39,7 +37,7 @@ const Skills = () => {
                     <Grid container direction="row">
                         <SkillsCard skills = {frontend} />
                         <SkillsCard skills = {backend} />
-                        <SkillsCard skills = {gameDev} />
+                        <SkillsCard skills = {SysAdmin} />
                     </Grid>
                 </Box>
             </Container>
